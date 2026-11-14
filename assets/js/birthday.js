@@ -361,7 +361,7 @@
 
   // ── Star sky: each star holds a wish; lit stars join into a constellation ──
   $$(".sky").forEach((sky) => {
-    const section = sky.closest(".section");
+    const section = sky.closest(".block");
     const caption = $(".sky-caption", section);
     const wishes = $$(".sky-wishes li", section).map((li) => li.textContent.trim());
     const finalLine = ($(".sky-final", section) || {}).textContent || "";
@@ -451,7 +451,7 @@
     for (let i = 0; i < n; i++) {
       const c = document.createElement("div");
       c.className = "candle";
-      c.style.setProperty("--h", `${170 - Math.abs(i - mid) * 22}px`); // tallest in the middle
+      c.style.setProperty("--h", `${72 - Math.abs(i - mid) * 5}px`); // tallest in the middle
       c.innerHTML = '<span class="flame"></span><span class="smoke"></span>';
       c.setAttribute("role", "button");
       c.setAttribute("aria-label", "Blow out candle");

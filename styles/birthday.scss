@@ -68,7 +68,7 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
 }
 
 // ───────── Sections ─────────
-.section {
+.block {
   position: relative;
   padding: 7rem 1.25rem;
   > * { max-width: 1100px; margin-left: auto; margin-right: auto; }
@@ -114,7 +114,7 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
     border: 1px solid rgba($gold, .6);
   }
   img {
-    width: 100%; height: 100%; display: block;
+    width: 100%; height: auto; aspect-ratio: 1; display: block;
     object-fit: cover; object-position: center 35%;
     border-radius: 50%;
     box-shadow: 0 0 0 4px $ivory, 0 0 0 5px $gold, 0 20px 50px rgba($navy, .18);
@@ -372,12 +372,47 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
   .section-sub { color: rgba($gold-lt, .8); }
 }
 .candles-stage { text-align: center; }
+.cake { position: relative; width: min(340px, 82vw); margin: 5rem auto 4.5rem; }
 .candles-row {
-  display: flex; justify-content: center; align-items: flex-end; gap: clamp(1rem, 4vw, 2rem);
-  height: 230px; margin: 2rem auto 3rem;
+  position: relative; z-index: 2;
+  display: flex; justify-content: center; align-items: flex-end; gap: clamp(.7rem, 3vw, 1.2rem);
+  width: 70%; margin: 0 auto -6px;
+}
+.tier {
+  position: relative; margin: 0 auto; border-radius: 10px 10px 4px 4px;
+  background: linear-gradient(90deg, #eadcc0, $paper 40%, #f3e8d2 70%, #e2d1ad);
+  box-shadow: inset 0 -8px 14px rgba(0, 0, 0, .08);
+  &::before { // frosting with drips
+    content: ""; position: absolute; inset: 0 0 auto 0; height: 26px; border-radius: 10px 10px 0 0;
+    background:
+      radial-gradient(circle at 50% 0, #fffefb 11px, transparent 12px) 0 10px / 30px 22px repeat-x,
+      linear-gradient(#fffefb, #fffefb) 0 0 / 100% 12px no-repeat;
+  }
+  &::after { // gold ribbon
+    content: ""; position: absolute; left: 0; right: 0; bottom: 18%; height: 6px;
+    background: linear-gradient(90deg, $gold-dk, $gold-lt, $gold-dk);
+  }
+}
+.tier-top { width: 70%; height: 74px; }
+.tier-bottom {
+  width: 100%; height: 96px; margin-top: -2px;
+  &::after { // a row of gold pearls instead of a flat ribbon
+    height: 8px;
+    background: radial-gradient(circle, $gold-lt 2.5px, $gold-dk 3.5px, transparent 4px) 0 0 / 14px 8px repeat-x;
+  }
+}
+.cake-stand {
+  position: relative; width: 118%; margin: -2px 0 0 -9%; height: 14px; border-radius: 50%;
+  background: linear-gradient(90deg, $gold-dk, $gold-lt, $gold-dk);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .35);
+  &::after { // stem
+    content: ""; position: absolute; left: 50%; top: 100%; width: 34px; height: 30px; margin-left: -17px;
+    background: linear-gradient(90deg, $gold-dk, $gold-lt, $gold-dk);
+    clip-path: polygon(30% 0, 70% 0, 100% 100%, 0 100%);
+  }
 }
 .candle {
-  position: relative; width: 14px; height: var(--h, 140px); cursor: pointer;
+  position: relative; width: 10px; height: var(--h, 64px); cursor: pointer;
   border-radius: 3px 3px 2px 2px;
   background: linear-gradient(90deg, #e9dfc8, $paper 45%, #ddcfb0);
   &::before { // gold band
@@ -506,11 +541,15 @@ html.js:not(.opened) .dot-nav, html.js:not(.opened) .scroll-progress { opacity: 
 .quote-break {
   position: relative; min-height: 75vh; display: grid; place-items: center;
   text-align: center; padding: 7rem 1.5rem; color: $ivory;
-  background: linear-gradient(rgba($navy-dk, .78), rgba($navy-dk, .82)), var(--bg) center 30% / cover no-repeat;
+  background-color: $navy-dk; background-position: center 30%; background-size: cover; background-repeat: no-repeat;
   @media (hover: hover) and (min-width: 900px) { background-attachment: fixed; }
+  &::before { // dark veil over the photo (image itself is set inline in index.qmd)
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(rgba($navy-dk, .78), rgba($navy-dk, .84));
+  }
 }
 .quote-inner {
-  max-width: 900px;
+  position: relative; z-index: 1; max-width: 900px;
   &::before { content: ""; display: block; width: 1px; height: 60px; margin: 0 auto 2.5rem; background: linear-gradient(transparent, $gold); }
   p { margin: 0; }
 }

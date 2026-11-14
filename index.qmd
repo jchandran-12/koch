@@ -43,7 +43,7 @@ pagetitle: "Happy Birthday, Elsa"
 
 <!-- ───────────────────────── 2. INTRO ───────────────────────── -->
 
-::: {#intro .section data-nav="Hello"}
+::: {#intro .block data-nav="Hello"}
 ::: {.intro-card .reveal}
 ## Dear {{< var sister.nickname >}}, {.intro-title}
 
@@ -54,7 +54,7 @@ pagetitle: "Happy Birthday, Elsa"
 
 <!-- ───────────────────────── QUOTE ───────────────────────── -->
 
-::: {.quote-break style="--bg: url('images/gallery/night.jpg')"}
+::: {.quote-break style="background-image: url('images/gallery/night.jpg')"}
 ::: {.quote-inner .reveal}
 [You were the light I didn't know I needed.]{.word-reveal}
 :::
@@ -64,7 +64,7 @@ pagetitle: "Happy Birthday, Elsa"
 
 <!-- ✏️ Put her birth date here as YYYY-MM-DD (e.g. 2001-11-20).
      This section stays hidden until a date is filled in. -->
-::: {#numbers .section .section-alt data-nav="Numbers" data-birthdate=""}
+::: {#numbers .block .section-alt data-nav="Numbers" data-birthdate=""}
 ## Every Moment of You {.section-title}
 
 [and I'm grateful for every one]{.section-sub}
@@ -98,7 +98,7 @@ pagetitle: "Happy Birthday, Elsa"
 
 <!-- ───────────────────────── 4. CHAPTERS ───────────────────────── -->
 
-::: {#chapters .section data-nav="Chapters"}
+::: {#chapters .block data-nav="Chapters"}
 ## The Many Sides of You {.section-title}
 
 [and I love every one of them]{.section-sub}
@@ -194,7 +194,7 @@ And when life got too heavy, you made the silliest face, and suddenly it wasn't 
 
 <!-- ───────────────────────── QUOTE ───────────────────────── -->
 
-::: {.quote-break style="--bg: url('images/chapters/explorer.jpg')"}
+::: {.quote-break style="background-image: url('images/chapters/explorer.jpg')"}
 ::: {.quote-inner .reveal}
 [Because of you, I learned to smile without being afraid.]{.word-reveal}
 :::
@@ -202,7 +202,7 @@ And when life got too heavy, you made the silliest face, and suddenly it wasn't 
 
 <!-- ───────────────────────── 5. GALLERY ───────────────────────── -->
 
-::: {#gallery .section .section-alt data-nav="Moments"}
+::: {#gallery .block .section-alt data-nav="Moments"}
 ## Little Moments {.section-title}
 
 [the ones I never want to forget]{.section-sub}
@@ -270,7 +270,7 @@ And when life got too heavy, you made the silliest face, and suddenly it wasn't 
 
 <!-- ───────────────────────── 6. KOCH & CHETTAN (shuffling photo stack) ───────────────────────── -->
 
-::: {#us .section data-nav="Us"}
+::: {#us .block data-nav="Us"}
 ## {{< var sister.nickname >}} & {{< var from.name >}} {.section-title}
 
 [my favourite story]{.section-sub}
@@ -292,7 +292,7 @@ And when life got too heavy, you made the silliest face, and suddenly it wasn't 
 
 <!-- ───────────────────────── 7. REASONS (FLIP CARDS) ───────────────────────── -->
 
-::: {#reasons .section .section-alt data-nav="Reasons"}
+::: {#reasons .block .section-alt data-nav="Reasons"}
 ## Six Things I Love About You {.section-title}
 
 ::: reasons
@@ -362,7 +362,7 @@ You're my sister. That alone makes me the luckiest brother alive.
 
 <!-- ───────────────────────── 8. NOTES FOR THE DAYS AHEAD ───────────────────────── -->
 
-::: {#notes .section data-nav="Notes"}
+::: {#notes .block data-nav="Notes"}
 ## For the Days Ahead {.section-title}
 
 [for whenever you need them]{.section-sub}
@@ -422,7 +422,7 @@ Consider this one. The biggest, longest hug I can give, from me to you. Sending 
 
 <!-- ───────────────────────── 9. SCRATCH CARD ───────────────────────── -->
 
-::: {#secret .section .section-alt data-nav="Secret"}
+::: {#secret .block .section-alt data-nav="Secret"}
 ## Just Between Us {.section-title}
 
 ::: {.scratch-card .reveal}
@@ -433,7 +433,7 @@ Consider this one. The biggest, longest hug I can give, from me to you. Sending 
 
 <!-- ───────────────────────── 10. LETTER ───────────────────────── -->
 
-::: {#letter .section data-nav="Letter"}
+::: {#letter .block data-nav="Letter"}
 ## A Letter for You {.section-title}
 
 [from your {{< var from.name >}}]{.section-sub}
@@ -475,7 +475,7 @@ Happy birthday. I'm so lucky you're my sister.
 <!-- ✏️ To show this section: put real messages in, then delete the two lines marked WISHES-START and WISHES-END -->
 
 <!-- WISHES-START
-::: {#wishes .section .section-alt data-nav="Family"}
+::: {#wishes .block .section-alt data-nav="Family"}
 ## Wishes From Everyone {.section-title}
 
 ::: wishes
@@ -502,7 +502,7 @@ WISHES-END -->
 
 <!-- ───────────────────────── 12. STARS ───────────────────────── -->
 
-::: {#stars .section .section-night data-nav="Stars"}
+::: {#stars .block .section-night data-nav="Stars"}
 ## Everything I Wish for You {.section-title}
 
 ```{=html}
@@ -527,13 +527,18 @@ WISHES-END -->
 
 <!-- ───────────────────────── 13. CANDLES & HUG FINALE ───────────────────────── -->
 
-::: {#wish .section .section-finale data-nav="Make a wish"}
+::: {#wish .block .section-finale data-nav="Make a wish"}
 ## Make a Wish, {{< var sister.nickname >}} {.section-title}
 
 <!-- ✏️ data-candles = number of candles (3–9 looks best) -->
 ```{=html}
 <div class="candles-stage">
-  <div class="candles-row" data-candles="7"></div>
+  <div class="cake">
+    <div class="candles-row" data-candles="7"></div>
+    <div class="tier tier-top"></div>
+    <div class="tier tier-bottom"></div>
+    <div class="cake-stand"></div>
+  </div>
   <button class="blow-btn" type="button">Blow out the candles</button>
   <p class="wish-message" aria-live="polite">Happy birthday, Koch. Whatever you wished for, I'll be right here helping it come true.</p>
   <button class="hug" type="button" aria-label="A hug from Chettan"><span class="hug-heart"></span></button>
