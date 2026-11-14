@@ -75,6 +75,14 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
 }
 .section-alt { background: $sand; }
 
+// Quarto's custom layout zeroes padding via `#quarto-content > *`; restore ours at matching specificity
+#quarto-content > .block { padding: 7rem 1.25rem; }
+#quarto-content > .hero { padding: 3rem 1.25rem; }
+#quarto-content > .quote-break { padding: 7rem 1.5rem; }
+#quarto-content > .site-footer { padding: 2.25rem 1.25rem; }
+#quarto-content > .section-night { padding-bottom: 3rem; }
+#quarto-content > .section-night + .section-finale { padding-top: 3rem; }
+
 .section-title {
   text-align: center; font-weight: 500; letter-spacing: .01em;
   font-size: clamp(2.2rem, 5vw, 3.5rem);
