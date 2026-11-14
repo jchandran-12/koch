@@ -1,0 +1,549 @@
+---
+pagetitle: "Happy Birthday, Elsa"
+---
+
+<!--
+  ✏️  HOW TO EDIT
+  - Names live in _variables.yml
+  - Photos live in images/ (see images/README.md)
+  - Every block marked ✏️ is text meant to be rewritten
+-->
+
+<!-- ───────────────────────── 0. GIFT (covers the page until opened) ───────────────────────── -->
+
+```{=html}
+<div class="gift-overlay">
+  <button class="gift" type="button" aria-label="Open your gift">
+    <span class="gift-glow"></span>
+    <span class="gift-box"></span>
+    <span class="gift-lid"><span class="gift-bow"></span></span>
+  </button>
+  <p class="gift-to">For Koch</p>
+  <p class="gift-from">a little something from your Chettan</p>
+</div>
+```
+
+<!-- ───────────────────────── 1. HERO ───────────────────────── -->
+
+::: {#home .hero data-nav="Home"}
+::: hero-content
+::: hero-portrait
+![](images/hero/portrait.jpg){fig-alt="Elsa laughing, in a kasavu saree"}
+:::
+
+[Happy Birthday]{.hero-script}
+
+[{{< var sister.first >}} {{< var sister.last >}}]{.hero-name}
+
+[to the one who taught her {{< var from.name >}} how to smile]{.hero-tagline}
+
+[]{.scroll-cue aria-hidden="true"}
+:::
+:::
+
+<!-- ───────────────────────── 2. INTRO ───────────────────────── -->
+
+::: {#intro .section data-nav="Hello"}
+::: {.intro-card .reveal}
+## Dear {{< var sister.nickname >}}, {.intro-title}
+
+<!-- ✏️ This types itself out when it scrolls into view -->
+[Some people walk into your life and quietly change everything. For me, that was you. Today is your day, and this is my small way of saying thank you for every smile you ever gave me.]{.typewriter}
+:::
+:::
+
+<!-- ───────────────────────── QUOTE ───────────────────────── -->
+
+::: {.quote-break style="--bg: url('images/gallery/night.jpg')"}
+::: {.quote-inner .reveal}
+[You were the light I didn't know I needed.]{.word-reveal}
+:::
+:::
+
+<!-- ───────────────────────── 3. BY THE NUMBERS ───────────────────────── -->
+
+<!-- ✏️ Put her birth date here as YYYY-MM-DD (e.g. 2001-11-20).
+     This section stays hidden until a date is filled in. -->
+::: {#numbers .section .section-alt data-nav="Numbers" data-birthdate=""}
+## Every Moment of You {.section-title}
+
+[and I'm grateful for every one]{.section-sub}
+
+::: counters
+::: {.counter .reveal}
+[0]{.count data-stat="days"}
+
+[days of making the world softer]{.count-label}
+:::
+
+::: {.counter .reveal}
+[0]{.count data-stat="hours"}
+
+[hours of being someone's reason to smile]{.count-label}
+:::
+
+::: {.counter .reveal}
+[0]{.count data-stat="heartbeats"}
+
+[heartbeats, each one precious]{.count-label}
+:::
+
+::: {.counter .reveal}
+[∞]{.count-static}
+
+[times you made me proud]{.count-label}
+:::
+:::
+:::
+
+<!-- ───────────────────────── 4. CHAPTERS ───────────────────────── -->
+
+::: {#chapters .section data-nav="Chapters"}
+## The Many Sides of You {.section-title}
+
+[and I love every one of them]{.section-sub}
+
+::: chapters
+<!-- ✏️ Swap photos / rewrite lines freely -->
+
+::: {.chapter .reveal}
+::: chapter-photo
+![](images/chapters/grace.jpg){.lightbox group="chapters" fig-alt="Elsa in a kasavu saree"}
+:::
+
+::: chapter-text
+[I.]{.chapter-num}
+
+### The Graceful One {.chapter-title}
+
+In kasavu and gold, you carry a quiet grace that makes everyone around you stand a little taller. Me included.
+:::
+:::
+
+::: {.chapter .reveal}
+::: chapter-photo
+![](images/chapters/cadet.jpg){.lightbox group="chapters" fig-alt="Elsa in her NCC uniform"}
+:::
+
+::: chapter-text
+[II.]{.chapter-num}
+
+### The Cadet {.chapter-title}
+
+You showed me that discipline and kindness can live in the same heart. I watched you, and I learned.
+:::
+:::
+
+::: {.chapter .reveal}
+::: chapter-photo
+![](images/chapters/player.jpg){.lightbox group="chapters" fig-alt="Elsa on the badminton court"}
+:::
+
+::: chapter-text
+[III.]{.chapter-num}
+
+### The Fighter {.chapter-title}
+
+Under those lights, you never gave up. Every time I wanted to quit something, I thought of you on that court.
+:::
+:::
+
+::: {.chapter .reveal}
+::: chapter-photo
+![](images/chapters/explorer.jpg){.lightbox group="chapters" fig-alt="Elsa laughing on a rock under the sky"}
+:::
+
+::: chapter-text
+[IV.]{.chapter-num}
+
+### The Laugh {.chapter-title}
+
+You laugh at the sky like it's an old friend. That sound is something I'll carry with me forever.
+:::
+:::
+
+::: {.chapter .reveal}
+::: chapter-photo
+![](images/chapters/dreamer.jpg){.lightbox group="chapters" fig-alt="Elsa looking away, lost in thought"}
+:::
+
+::: chapter-text
+[V.]{.chapter-num}
+
+### The Dreamer {.chapter-title}
+
+I don't always know what you're thinking. But I know your dreams are big, and I'll be cheering for every single one.
+:::
+:::
+
+::: {.chapter .reveal}
+::: chapter-photo
+![](images/chapters/goofball.jpg){.lightbox group="chapters" fig-alt="Elsa pulling a funny face"}
+:::
+
+::: chapter-text
+[VI.]{.chapter-num}
+
+### The Light {.chapter-title}
+
+And when life got too heavy, you made the silliest face, and suddenly it wasn't so heavy anymore.
+:::
+:::
+:::
+:::
+
+<!-- ───────────────────────── QUOTE ───────────────────────── -->
+
+::: {.quote-break style="--bg: url('images/chapters/explorer.jpg')"}
+::: {.quote-inner .reveal}
+[Because of you, I learned to smile without being afraid.]{.word-reveal}
+:::
+:::
+
+<!-- ───────────────────────── 5. GALLERY ───────────────────────── -->
+
+::: {#gallery .section .section-alt data-nav="Moments"}
+## Little Moments {.section-title}
+
+[the ones I never want to forget]{.section-sub}
+
+::: gallery
+<!-- ✏️ Caption goes inside the [ ] -->
+
+::: {.g-item .reveal}
+![The quiet kind of beautiful](images/gallery/kasavu.jpg){.lightbox group="gallery"}
+:::
+
+::: {.g-item .reveal}
+![Precious. You always have been.](images/gallery/precious.jpg){.lightbox group="gallery"}
+:::
+
+::: {.g-item .reveal}
+![Brave enough to go anywhere](images/gallery/station.jpg){.lightbox group="gallery"}
+:::
+
+::: {.g-item .reveal}
+![Your laugh, my favourite sound](images/gallery/mint.jpg){.lightbox group="gallery"}
+:::
+
+::: {.g-item .reveal}
+![My Elsamma](images/gallery/elsamma.jpg){.lightbox group="gallery"}
+:::
+
+::: {.g-item .reveal}
+![Proud of you, every single day](images/gallery/agricos.jpg){.lightbox group="gallery"}
+:::
+
+::: {.g-item .reveal}
+![Always there when someone needs you](images/gallery/on-call.jpg){.lightbox group="gallery"}
+:::
+
+::: {.g-item .reveal}
+![Ready for whatever comes next](images/gallery/bike.jpg){.lightbox group="gallery"}
+:::
+
+::: {.g-item .reveal}
+![Strong, even in silence](images/gallery/mono.jpg){.lightbox group="gallery"}
+:::
+
+::: {.g-item .reveal}
+![Your softness is your strength](images/gallery/pink.jpg){.lightbox group="gallery"}
+:::
+
+::: {.g-item .reveal}
+![Peace looks like this](images/gallery/night.jpg){.lightbox group="gallery"}
+:::
+
+::: {.g-item .reveal}
+![Sunshine, in human form](images/gallery/sunshine.jpg){.lightbox group="gallery"}
+:::
+
+::: {.g-item .reveal}
+![Walking your own path](images/gallery/walk.jpg){.lightbox group="gallery"}
+:::
+
+::: {.g-item .reveal}
+![Even on the hard days, you are enough](images/gallery/one-of-those-days.jpg){.lightbox group="gallery"}
+:::
+:::
+:::
+
+<!-- ───────────────────────── 6. KOCH & CHETTAN (shuffling photo stack) ───────────────────────── -->
+
+::: {#us .section data-nav="Us"}
+## {{< var sister.nickname >}} & {{< var from.name >}} {.section-title}
+
+[my favourite story]{.section-sub}
+
+::: {.card-stack .reveal}
+::: stack-card
+![You hid your face. I kept the memory.](images/us/hiding.jpg){fig-alt="Koch hiding her face while Chettan smiles"}
+:::
+
+::: stack-card
+![My favourite person, in every frame](images/us/selfie.jpg){fig-alt="Selfie of Koch and Chettan"}
+:::
+
+::: stack-card
+![You've been carrying me longer than you know](images/us/strong-one.jpg){fig-alt="Koch lifting Chettan off the ground"}
+:::
+:::
+:::
+
+<!-- ───────────────────────── 7. REASONS (FLIP CARDS) ───────────────────────── -->
+
+::: {#reasons .section .section-alt data-nav="Reasons"}
+## Six Things I Love About You {.section-title}
+
+::: reasons
+<!-- ✏️ Rewrite any of these -->
+
+::: {.flip-card .reveal tabindex="0"}
+::: flip-front
+[01]{.flip-num}
+:::
+
+::: flip-back
+You taught me to smile, even when I didn't think I had a reason to.
+:::
+:::
+
+::: {.flip-card .reveal tabindex="0"}
+::: flip-front
+[02]{.flip-num}
+:::
+
+::: flip-back
+You believed in me before I ever believed in myself.
+:::
+:::
+
+::: {.flip-card .reveal tabindex="0"}
+::: flip-front
+[03]{.flip-num}
+:::
+
+::: flip-back
+Your laugh can fix a bad day in seconds. I've tested it many times.
+:::
+:::
+
+::: {.flip-card .reveal tabindex="0"}
+::: flip-front
+[04]{.flip-num}
+:::
+
+::: flip-back
+You're strong in a quiet way that makes everyone around you stronger.
+:::
+:::
+
+::: {.flip-card .reveal tabindex="0"}
+::: flip-front
+[05]{.flip-num}
+:::
+
+::: flip-back
+You never once let me feel alone.
+:::
+:::
+
+::: {.flip-card .reveal tabindex="0"}
+::: flip-front
+[06]{.flip-num}
+:::
+
+::: flip-back
+You're my sister. That alone makes me the luckiest brother alive.
+:::
+:::
+:::
+:::
+
+<!-- ───────────────────────── 8. NOTES FOR THE DAYS AHEAD ───────────────────────── -->
+
+::: {#notes .section data-nav="Notes"}
+## For the Days Ahead {.section-title}
+
+[for whenever you need them]{.section-sub}
+
+::: notes
+<!-- ✏️ Label on the envelope, then the note inside -->
+
+::: {.note .reveal tabindex="0" role="button"}
+[When you miss me]{.note-label}
+
+::: note-body
+Think of those two shadows on the road, side by side. Wherever you are, I'm right there with you. Call me. I'll always pick up.
+:::
+:::
+
+::: {.note .reveal tabindex="0" role="button"}
+[When you doubt yourself]{.note-label}
+
+::: note-body
+Remember who taught me to be confident. That was you, Koch. The strength I have today, I learned it by watching you. You've always had it. You still do.
+:::
+:::
+
+::: {.note .reveal tabindex="0" role="button"}
+[When it's a hard day]{.note-label}
+
+::: note-body
+It's okay to have one of those days. Cry if you need to. Then remember there's someone out here who thinks you're the bravest person he knows.
+:::
+:::
+
+::: {.note .reveal tabindex="0" role="button"}
+[When you're happy]{.note-label}
+
+::: note-body
+Then I'm happy too. Your smile has always been my favourite thing in the world. Go and enjoy every second of it.
+:::
+:::
+
+::: {.note .reveal tabindex="0" role="button"}
+[When you can't sleep]{.note-label}
+
+::: note-body
+Think of all the people whose lives are softer because of you. It's a long list. I'm right at the top of it.
+:::
+:::
+
+::: {.note .reveal tabindex="0" role="button"}
+[When you need a hug]{.note-label}
+
+::: note-body
+Consider this one. The biggest, longest hug I can give, from me to you. Sending it now, and every day after.
+:::
+:::
+:::
+:::
+
+<!-- ───────────────────────── 9. SCRATCH CARD ───────────────────────── -->
+
+::: {#secret .section .section-alt data-nav="Secret"}
+## Just Between Us {.section-title}
+
+::: {.scratch-card .reveal}
+<!-- ✏️ The hidden message under the gold foil -->
+[You are, and always will be, my favourite person in the whole world.]{.scratch-message}
+:::
+:::
+
+<!-- ───────────────────────── 10. LETTER ───────────────────────── -->
+
+::: {#letter .section data-nav="Letter"}
+## A Letter for You {.section-title}
+
+[from your {{< var from.name >}}]{.section-sub}
+
+::: letter-layout
+::: {.letter-photo .reveal}
+![always side by side](images/us/shadows.jpg){.lightbox}
+:::
+
+::: {.envelope-wrap .reveal}
+::: {.envelope role="button" tabindex="0" aria-label="Open the letter"}
+:::
+
+::: letter
+<!-- ✏️ Your letter -->
+Ente Kocheee......
+
+There's something I've never really said out loud, so I'm saying it here.
+
+I wasn't always the person you see today. I didn't smile easily. I wasn't sure of myself, and I was a lot quieter than I let anyone notice.
+
+Then there was you. You laughed like the world was never too heavy, and you believed in me long before I believed in myself.
+
+You're the reason I learned to smile without thinking twice. Watching you stand tall, in kasavu or a jersey, on a court or on a platform all on your own, made me want to be strong too. Little by little, because of you, I became someone confident.
+
+The confidence people see in me today? A big part of it is borrowed from you. I just never gave it back.
+
+So whatever this year brings, I'll be right beside you, the way you've always been beside me. Side by side, like those two shadows on the road.
+
+Happy birthday. I'm so lucky you're my sister.
+
+[With all my love,<br>your {{< var from.name >}}]{.letter-sign}
+:::
+:::
+:::
+:::
+
+<!-- ───────────────────────── 11. WISHES FROM FAMILY (hidden until filled in) ───────────────────────── -->
+<!-- ✏️ To show this section: put real messages in, then delete the two lines marked WISHES-START and WISHES-END -->
+
+<!-- WISHES-START
+::: {#wishes .section .section-alt data-nav="Family"}
+## Wishes From Everyone {.section-title}
+
+::: wishes
+::: wish
+"Message goes here."
+
+[— Name]{.wish-from}
+:::
+
+::: wish
+"Message goes here."
+
+[— Name]{.wish-from}
+:::
+
+::: wish
+"Message goes here."
+
+[— Name]{.wish-from}
+:::
+:::
+:::
+WISHES-END -->
+
+<!-- ───────────────────────── 12. STARS ───────────────────────── -->
+
+::: {#stars .section .section-night data-nav="Stars"}
+## Everything I Wish for You {.section-title}
+
+```{=html}
+<div class="sky"></div>
+<p class="sky-caption" aria-live="polite"></p>
+```
+
+::: sky-wishes
+<!-- ✏️ One wish per star -->
+- That you never forget how deeply you are loved.
+- Courage on the hard days, and rest on the tired ones.
+- People who see you the way I see you.
+- Adventures that make you feel alive.
+- Peace in your heart, always.
+- That you chase every dream without fear.
+- Laughter that comes easily, like it always has.
+- That you always know I'm right here.
+:::
+
+[Every single one of these, I wish for you. Always.]{.sky-final}
+:::
+
+<!-- ───────────────────────── 13. CANDLES & HUG FINALE ───────────────────────── -->
+
+::: {#wish .section .section-finale data-nav="Make a wish"}
+## Make a Wish, {{< var sister.nickname >}} {.section-title}
+
+<!-- ✏️ data-candles = number of candles (3–9 looks best) -->
+```{=html}
+<div class="candles-stage">
+  <div class="candles-row" data-candles="7"></div>
+  <button class="blow-btn" type="button">Blow out the candles</button>
+  <p class="wish-message" aria-live="polite">Happy birthday, Koch. Whatever you wished for, I'll be right here helping it come true.</p>
+  <button class="hug" type="button" aria-label="A hug from Chettan"><span class="hug-heart"></span></button>
+  <p class="hug-message" aria-live="polite">That's the biggest hug I could ever send you. I love you, Koch.</p>
+</div>
+```
+:::
+
+<!-- ───────────────────────── FOOTER ───────────────────────── -->
+
+::: site-footer
+Made with all my love by your {{< var from.name >}} · for {{< var sister.first >}}, today and always
+:::

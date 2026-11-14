@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+  resources:
+    - assets/
+    - images/
+
+website:
+  title: "Happy Birthday"
+  favicon: assets/favicon.svg
+  page-navigation: false
+  search: false
+
+format:
+  html:
+    theme: [default, styles/birthday.scss]
+    page-layout: custom
+    toc: false
+    anchor-sections: false
+    section-divs: false
+    smooth-scroll: true
+    include-in-header: assets/includes/head.html
+    include-after-body: assets/includes/scripts.html
